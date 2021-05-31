@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { HashRouter as Router, Switch, Route} from "react-router-dom";
 import Navbar from './Components/Navbar';
 import BlogList from './Components/BlogList';
 import BlogDetail from './Components/BlogDetail';
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-    <Router>
+    <Router basename="/">
        <Navbar />
        <Switch>
           <Route exact path="/" component={BlogList} />

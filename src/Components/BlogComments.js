@@ -8,7 +8,7 @@ const BlogComment = ({ blogId, title }) =>{
 	const [errorMessage, setErrorMessage] = useState('');
 
 	useEffect(() => {
-		fetch(`http://localhost:5000/blogs/${blogId}/comments`, {mode : 'cors'})
+		fetch(`https://hidden-eyrie-46633.herokuapp.com/${blogId}/comments`, {mode : 'cors'})
  		.then(response => {
  			 if (!response.ok) {
 		        throw new Error("ERROR: HTTP status " + response.status);

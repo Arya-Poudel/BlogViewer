@@ -10,7 +10,7 @@ const CreateBlogComment = ({ blogId }) =>{
 
 		let formdata = new FormData(document.getElementById('comment_form'))
 
-		fetch(`http://localhost:5000/blogs/${blogId}/comments`, {
+		fetch(`https://hidden-eyrie-46633.herokuapp.com/blogs/${blogId}/comments`, {
 			  mode : 'cors',
 			  method: "post",
 			  headers: {

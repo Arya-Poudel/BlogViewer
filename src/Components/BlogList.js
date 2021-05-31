@@ -7,7 +7,7 @@ const BlogList = () =>{
 	const [errorMessage, setErrorMessage] = useState('');
 
 	useEffect(() => {
-		fetch('http://localhost:5000/blogs', {mode : 'cors'})
+		fetch('https://hidden-eyrie-46633.herokuapp.com/blogs', {mode : 'cors'})
  		.then(response => {
  			 if (!response.ok) {
 		        throw new Error("ERROR: HTTP status " + response.status);

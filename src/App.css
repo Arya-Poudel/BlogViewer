@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background: #63e9ef;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.navlink {
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    font-weight: 700;
+}
+
+.blog, .blogcomment{
+    border-radius: 15px;
+    padding: 20px;
+    width: 700px;
+    max-width: 80%;
+    margin: 10px auto;
+    background: #afdee8;
+    
+}
+
+.blogDesc {
+    font-weight: bold;
+    background: #e0eeef;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.link{
+text-decoration: none;
+color: black;
+}
+
+.linkBtn {
+    background: #28bf57;
+    margin: 10px 0;
+}
+
+.linkBtn:hover {
+    background: #006400;
+}
+
+button {
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+
+.linkBtn-link{
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.btn-links{
+	display: flex;
+	gap: 5px;
+	justify-content: center;
+}
+.blogDetails{
+	display: grid;
+	justify-content: flex-end;
+	grid-gap: 10px;
+	margin: 5px;
+}
+
+.form_div {
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: #b2ebf2;
+    color: #902828;
+}
+
+.form_div label {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.form_div input {
+    height: 1.5rem;
+    border: 1px solid black;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#comment{
+	height: 5rem;
+}
+
+.message-post{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}

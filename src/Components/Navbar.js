@@ -4,8 +4,11 @@ import React from "react";
 const Navbar = () =>{
 	return(
 	<nav className="navbar ">
-        <Link to="/blogs" className="navlink">BLOGS</Link>  
-        <div className="navlink">Admin</div>      
+        <h1>DEMO BLOG</h1>
+        <div>
+            <Link to="/blogs" className="navlink">BLOGS</Link>  
+            <a href="https://arya-poudel.github.io/BlogAdmin/#/" target="blank" className="navlink">ADMIN</a>    
+       </div>
    </nav>
    )
 }

@@ -14,21 +14,25 @@ const BlogList = () =>{
 		    }
  			return response.json();
  		})
-  		.then(data => setBlogList(data))
+  		.then(data => {
+  			console.log(data);
+  			setBlogList(data)
+
+  			})
   		.catch(err => setErrorMessage(err.message))
 	}, [])
 
 	
 	return(
 	<>
-		<h1 style={{textAlign: "center"}}> BlogList </h1>
 		{!errorMessage && 
 			<div>
+				<h1 style={{textAlign: "center", color: "#fbf8f8"}}> Posts </h1>
 		        {bloglist.map(blog => (
 		        	<Link to={`/blogs/${blog._id}`} key={blog._id} className="link">
 						<div className="blog"> 
-							<h1 style={{textAlign: "center"}}>{blog.title}</h1>
-							<p className="blogDesc">{blog.truncated_text} ......</p>
+							<h1>{blog.title}</h1>
+							<p>{blog.truncated_text}... </p>
 						</div>
 					</Link>
 		   

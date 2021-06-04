@@ -1,53 +1,61 @@
-.App {
-  text-align: center;
+body{
+    background: #3e3c3c;
+    color: white;
 }
 
-.navbar {
+.navbar{
     display: flex;
     justify-content: space-around;
-    background: #63e9ef;
-    padding: 20px;
     align-items: center;
+    color: #3e3c3c;
+    padding: 15px;
     margin-bottom: 10px;
+    background: antiquewhite;
 }
 
-.navlink {
-    text-decoration: none;
+.navlink{
+    color: #3e3c3c;
+    margin-left: 20px;
+    font-weight: bolder;
     font-size: 1.1rem;
-    letter-spacing: .1rem;
-    font-weight: 700;
 }
 
-.blog, .blogcomment{
-    border-radius: 15px;
-    padding: 20px;
-    width: 700px;
-    max-width: 80%;
-    margin: 10px auto;
-    background: #afdee8;
-    
+.blog{
+    background: #fbf8f8;
+    padding: 15px;
+    color: #3e3c3c;
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
 }
 
-.blogDesc {
-    font-weight: bold;
-    background: #e0eeef;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px;
+.blog:hover{
+  box-shadow: 5px 10px #888888;
 }
 
 .link{
-text-decoration: none;
-color: black;
+    text-decoration: none;
 }
 
+.blogdetail{
+    display: grid;
+    grid-gap: 10px;
+    background:#fbf8f8;
+    color: #3e3c3c;
+    padding: 15px;
+     width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+
+}
+/*#28bf57*/
 .linkBtn {
-    background: #28bf57;
+    background: #ef9c9c;
     margin: 10px 0;
 }
 
 .linkBtn:hover {
-    background: #006400;
+    background: #e85050;
 }
 
 button {
@@ -58,22 +66,32 @@ button {
     border: none;
 }
 
-.linkBtn-link{
-	display: flex;
-	justify-content: center;
-	text-decoration: none;
+.btn-links{
+    display: flex;
+    gap: 5px;
 }
 
-.btn-links{
-	display: flex;
-	gap: 5px;
-	justify-content: center;
+.blogcomments{ 
+    margin: 30px auto;
+     width: 90%;
+    max-width: 700px;
+    display: grid;
+    grid-gap: 20px;
 }
-.blogDetails{
-	display: grid;
-	justify-content: flex-end;
-	grid-gap: 10px;
-	margin: 5px;
+
+.blogcomment{
+    background:#fbf8f8;
+    color: #3e3c3c;
+     padding: 15px;
+}
+
+.createblogcomments{
+    background:#fbf8f8;
+    color: #3e3c3c;
+    padding: 10px;
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
 }
 
 .form_div {
@@ -87,29 +105,14 @@ button {
     text-align: center;
     padding: 10px;
     border-radius: 10px;
-    background: #b2ebf2;
-    color: #902828;
-}
-
-.form_div label {
-    font-weight: bold;
-    font-size: 1.1rem;
 }
 
 .form_div input {
     height: 1.5rem;
-    border: 1px solid black;
     padding: 1rem;
-    border: 1px solid black;
-    border-radius: 10px;
 }
 
 #comment{
-	height: 5rem;
-}
-
-.message-post{
-    text-align: center;
-    font-weight: bold;
-    margin-top: 10px;
+    height: 5rem;
+    padding: 1rem;
 }

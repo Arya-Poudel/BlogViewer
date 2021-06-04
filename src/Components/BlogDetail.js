@@ -27,13 +27,11 @@ const BlogDetail = ({ blogId }) =>{
 	return(
 	<>
 		{!errorMessage && 
-			<div className="blog"> 
-				<h1 style={{textAlign: "center"}}>{blogDetail.title}</h1>
-				<p className="blogDesc">{blogDetail.text}</p>
-				<div className="blogDetails">
-					<p><b>Date:</b> {blogDetail.time}</p>
-					<p><b>Postedby:</b> {blogAdmin}</p>
-				</div>
+			<div className="blogdetail"> 
+				<h1>{blogDetail.title}</h1>
+				<p>{blogDetail.text}</p>
+				<p><b>Date:</b> {blogDetail.time}</p>
+				<p><b>Postedby:</b> {blogAdmin}</p>
 				<div className="btn-links">
 					<Link to={`/blogs/${blogDetail._id}/comments/` }>
 						<button className="linkBtn">

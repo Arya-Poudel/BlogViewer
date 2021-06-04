@@ -30,20 +30,22 @@ const CreateBlogComment = ({ blogId }) =>{
 	}
 
 	return(
-	<div className="createblogcomments ">
+	<div className="createblogcomments">
         <h1 style={{textAlign: "center", margin: "10px"}}> Add new comment </h1>
 
-        <form id="comment_form"  onSubmit={handleFormSubmit} className="form_div">
-        	<label htmlFor="name">Username:</label>
+        <form id="comment_form"  onSubmit={handleFormSubmit} className="form_div" autoComplete="off">
+        	<label htmlFor="name">Username*:</label>
         	<input type="text" id="name" name="name" required/>
-        	<label htmlFor="comment">Comment:</label>
-        	<input type="text" id="comment" name="comment" minLength="5" required/>
-        	<button type="submit" className="linkBtn">Submit</button>
-        	<Link to={`/blogs/${blogId}/comments/`}>
-	        	<button type="button" className="linkBtn">Cancel</button>
-	        </Link>
+        	<label htmlFor="comment">Comment*:</label>
+        	<textarea name="comment" id="comment" minLength="5"></textarea>
+        	<div className="btn-links">
+	        	<button type="submit" className="linkBtn">Submit</button>
+	        	<Link to={`/blogs/${blogId}/comments/`}>
+		        	<button type="button" className="linkBtn">Go Back</button>
+		        </Link>
+	        </div>
         </form>
-        <p className="message-post">{message}</p>
+        <p style={{textAlign: "center", fontWeight: "bold"}}>{message}</p>
    </div>
    )
 }

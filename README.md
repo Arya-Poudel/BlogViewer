@@ -6,7 +6,7 @@ A [blog website](https://arya-poudel.github.io/BlogViewer/#/) where viewers can 
 
 The admin can login from the admin website. 
 
-The [backend for this](https://github.com/Arya-Poudel/BlogApi) was made using Node and Express where REST API was implemented. Its [hosted at netlify.](https://hidden-eyrie-46633.herokuapp.com/)
+The [backend for this](https://github.com/Arya-Poudel/BlogApi) was made using Node and Express where REST API was implemented. Its [hosted at heroku.](https://hidden-eyrie-46633.herokuapp.com/)
 
 
 

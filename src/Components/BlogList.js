@@ -15,9 +15,7 @@ const BlogList = () =>{
  			return response.json();
  		})
   		.then(data => {
-  			console.log(data);
   			setBlogList(data)
-
   			})
   		.catch(err => setErrorMessage(err.message))
 	}, [])

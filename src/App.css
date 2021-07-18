@@ -24,8 +24,6 @@ body{
     background: #fbf8f8;
     padding: 15px;
     color: #3e3c3c;
-    width: 90%;
-    max-width: 700px;
     margin: 20px auto;
 }
 
@@ -35,6 +33,10 @@ body{
 
 .link{
     text-decoration: none;
+    width: 90%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto
 }
 
 .blogdetail{
